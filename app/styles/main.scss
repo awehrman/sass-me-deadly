@@ -1,0 +1,64 @@
+// bower:scss
+// endbower
+@font-face {
+  font-family: 'FuturaStd-ExtraBold';
+  src: url('../fonts/FuturaStd-ExtraBold.eot');
+  src: url('../fonts/FuturaStd-ExtraBold.woff2') format('woff2'),
+       url('../fonts/FuturaStd-ExtraBold.woff') format('woff'),
+       url('../fonts/FuturaStd-ExtraBold.ttf') format('truetype'),
+       url('../fonts/FuturaStd-ExtraBold.svg#FuturaStd-ExtraBold') format('svg'),
+       url('../fonts/FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url(https://s1.gifgif.io/iPAYLZ.gif) no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'FuturaStd-ExtraBold', Futura, sans-serif;
+}
+
+#deadly {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  perspective: 400px;
+  font-size: 8em;
+  line-height: 1.1;
+  letter-spacing: 6px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, .3), 0 0 80px rgba(255, 255, 255, .6);
+}
+
+.lower {
+  text-transform: none;
+  display: block;
+  font-size: .4em;
+}
+
+.crawl {
+  position: relative;
+  top: -1200px;
+  animation: crawl 30s linear;
+  transform-origin: 50% 100%;
+}
+
+@keyframes crawl {
+  0% {
+    top: -1200px;
+    color: white;
+    transform: rotateX(15deg) translateZ(0);
+  }
+
+  100% {
+    top: 100vh;
+    color: white;
+    transform: rotateX(13deg) translateZ(200px);
+  }
+}
