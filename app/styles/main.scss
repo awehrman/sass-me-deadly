@@ -25,6 +25,7 @@ body {
 
 #deadly {
   text-align: center;
+  font-feature-settings: "kern" 1;
   text-transform: uppercase;
   font-weight: 800;
   display: flex;
@@ -44,14 +45,14 @@ body {
 
 .crawl {
   position: relative;
-  top: -1200px;
-  animation: crawl 30s linear;
+  top: -1400px;
+  animation: crawl 30s linear infinite;
   transform-origin: 50% 100%;
 }
 
 @keyframes crawl {
   0% {
-    top: -1200px;
+    top: -1400px;
     color: white;
     transform: rotateX(15deg) translateZ(0);
   }
